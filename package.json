@@ -1,9 +1,10 @@
 {
   "name": "cipher",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "react": "^16.6.3",
+    "react-desktop": "^0.3.7",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
   },
