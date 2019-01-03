@@ -33,7 +33,7 @@ class App extends Component {
     return (
       <div className="App">
         <TitleBar
-          title="Cipher"
+          title="Wiretap"
           controls
           isMaximized={this.state.isMaximized}
           theme={this.props.theme}

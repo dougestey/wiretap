@@ -21,7 +21,7 @@ class AuthenticationView extends Screen {
             color={this.props.color}
             marginBottom="2rem"
           >
-            Cipher is capable of uploading your saved journal entries to Inara as logbooks.<br />
+            Wiretap is capable of uploading your saved journal entries to Inara as logbooks.<br />
             To enable this functionality, you must supply your Inara API key.
           </Text>
 

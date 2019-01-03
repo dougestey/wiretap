@@ -19,7 +19,7 @@ class AboutView extends Screen {
           <Text
             color={this.props.color}
           >
-            Cipher v1.0.0<br />
+            Wiretap v0.1.0<br />
             Created by CMDR Chad VanGaalen
           </Text>
         </View>

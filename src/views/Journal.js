@@ -4,6 +4,7 @@ import {
   View
 } from 'react-desktop/windows';
 
+import Journal from '../components/Journal';
 import Screen from '../components/Screen';
 
 class JournalView extends Screen {
@@ -21,6 +22,8 @@ class JournalView extends Screen {
           >
             Journal Entries
           </Text>
+
+          <Journal />
         </View>
       </div>
     )
