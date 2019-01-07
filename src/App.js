@@ -8,6 +8,7 @@ import {
   MasterDetailsViewItemDetails,
   TitleBar
 } from 'react-desktop/windows';
+import Sugar from 'sugar';
 
 import AboutView from './views/About';
 import AuthenticationView from './views/Authentication';
@@ -22,6 +23,9 @@ class App extends Component {
 
   constructor(props) {
     super(props);
+
+    Sugar.extend();
+
     this.state = { isMaximized: true };
   }
 

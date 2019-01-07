@@ -8,15 +8,24 @@ import '../styles/Message.css';
 class Message extends Component {
   render() {
     let content = this.props.data;
-    
+
     if (!content)
       return;
 
+    // let content = message.Content,
+    //     preview;
+
+    // preview = content.truncate(255);
+
     return (
       <div className="Message">
-        {content.timestamp} &nbsp;
+        <span className="Message-timestamp">
+          {content.timestamp}
+        </span>
 
-        {content.Message ? content.Message : ''}
+        <span className="Message-content">
+          {content.Message ? content.Message : ''}
+        </span>
       </div>
     )
   }

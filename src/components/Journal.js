@@ -7,12 +7,6 @@ import db from '../db';
 import Message from './Message';
 
 class Journal extends Component {
-  // constructor(props) {
-  //   super(props);
-
-  //   this.refWebSocket = undefined;
-  // }
-
   componentDidMount() {
     db.table('messages')
       .toArray()
@@ -34,10 +28,12 @@ class Journal extends Component {
 
   onMessage(payload) {
     let result = JSON.parse(payload.data);
-    
+
     let { payload: entry } = result;
 
-    if ((entry.Channel && entry.Channel !== 'npc') && entry.Message) {
+    console.log(entry);
+
+    if (entry.Message) {
       db.table('messages')
         .add(entry)
         .then((id) => {

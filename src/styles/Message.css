@@ -1,3 +1,6 @@
 .Message {
-  background: green;
+  color: white;
+  display: flex;
+  flex-align: row;
+  flex-wrap: nowrap;
 }
